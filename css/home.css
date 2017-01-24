@@ -1,0 +1,76 @@
+
+
+.header-page{
+
+    background-color: darkcyan;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    font-style: normal;
+    height: 50px;
+    width: auto;
+    color: white;
+    margin-bottom: 50px;
+}
+
+
+
+body{
+
+    background-color: #e0ebfb;
+}
+
+
+.noticias{
+   margin-left: 15%;
+   width: 700px;
+   height: 200px;
+   background-color: white;
+   padding: 30px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   box-shadow: 5px 5px 5px  #0a050a ;
+   border-radius: 20px;
+   overflow: hidden;
+}
+
+.header-page a{
+    padding-top: 15px;
+    padding-left: 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 15px;
+    float: left;
+
+    
+}
+
+.header-page a:hover{
+    color: aqua;
+
+}
+
+.mySlider{
+
+    display: none;
+    text-align: center;
+    margin-left: 30%;
+
+}
+
+
+.slideShow{
+
+    background-color: cadetblue;
+    text-align: center;
+
+
+}
+
+
+
+
+
+
+
+
+

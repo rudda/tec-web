@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="../../css/home.css">
+</head>
+<body>
+
+<!-- sliderShow -->
+
+<div class="slideShow">
+    <img class="mySlider" src="../img/im1.jpg" width="400" height="300">
+    <img class="mySlider"  src="../img/im2.jpg" width="400" height="300">
+    <img class="mySlider" src="../img/im3.jpg" width="400" height="300">
+
+</div>
+
+
+<!-- end sliderShow -->
+
+
+<!-- menu-->
+<div class="header-page">
+    <a href="../../index.html" >Noticias</a>    <a href="#">Videos</a>  <a href="#">Galeria de Fotos</a>    <a href="#">Frases Apostólicas</a>  <a href="#"> Sobre </a>
+
+</div>
+
+
+<!-- fim menu-->
+
+
+
+<p>O Site Apostolicos.com é um siste inteiramente informativo, disponibilizando todo o conteudo da Igreja evangélica Apostólica. São conteúdos de todas as igrejas do Brasil, fotos, videos, frases gospel.</p>
+<p> Nós não publicamos anuncios, nem proganda, mas, agradecemos sempre nossos apoioadores.</p>
+
+
+<!-- script p slider-->
+
+<script>
+
+
+    var index = 0;
+    carrousel();
+
+    function carrousel() {
+
+        var i;
+        var x = document.getElementsByClassName("mySlider");
+
+        for(i=0; i<x.length; i++){
+
+            x[i].style.display = "none";
+
+        }
+
+        index++;
+        if(index > x.length){
+            index = 1;
+        }
+
+        x[index  -1].style.display = "block";
+
+        setTimeout(carrousel, 2000);
+
+    }
+
+</script>
+
+<!-- fim do script-->
+
+
+</body>
+</html>

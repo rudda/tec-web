@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Igreja Apostólica </title>
+
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+
+<!-- sliderShow -->
+
+<div class="slideShow">
+    <img class="mySlider" src="src/img/im1.jpg" width="400" height="300">
+    <img class="mySlider"  src="src/img/im2.jpg" width="400" height="300">
+    <img class="mySlider" src="src/img/im3.jpg" width="400" height="300">
+
+</div>
+
+
+<!-- end sliderShow -->
+
+
+<!-- menu-->
+<div class="header-page">
+    <a href="index.html" >Noticias</a>    <a href="#">Videos</a>  <a href="#">Galeria de Fotos</a>    <a href="#">Frases Apostólicas</a>  <a href="src/paginas/sobre.html"> Sobre </a>
+
+</div>
+
+
+<!-- fim menu-->
+
+<!--noticias-->
+
+
+<div >
+
+    <div class="noticias" >
+
+        <div style="width: 100px; float: left">
+            <img src="src/img/im2.png" height="100" width="100" style="text-align: center; padding: 25px">
+        </div>
+
+        <div style="width: 500px; float: right; ">
+            <h3>Retiro 2017 - Confira as novidades!!</h3>
+            <p> O congresso de Jovens da Igreja Apostolica Acontecerá no dia 3 de feveiro de 2017, contará com a participação dos pastores Amésio e Pastor Freitas da Igreja Monte Sião</p>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+</div>
+
+
+<!-- fim noticias-->
+
+
+<!-- rodapé-->
+
+<div style="background-color: darkcyan; height: 100px; margin-top: 100px">
+    <p style="text-align: center; color: white; size: 15px; padding:  25px";> created by: Ruddá Beltrão  -  beltrao.rudah@gmail.com</p>
+
+
+</div>
+
+<!fim rodapé-->
+<!-- script p slider-->
+
+<script>
+
+
+    var index = 0;
+    carrousel();
+
+    function carrousel() {
+
+        var i;
+        var x = document.getElementsByClassName("mySlider");
+
+        for(i=0; i<x.length; i++){
+
+            x[i].style.display = "none";
+
+        }
+
+        index++;
+        if(index > x.length){
+            index = 1;
+        }
+
+        x[index  -1].style.display = "block";
+
+        setTimeout(carrousel, 2000);
+
+    }
+
+</script>
+
+<!-- fim do script-->
+
+</body>
+</html>
